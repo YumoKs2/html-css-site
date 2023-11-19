@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+/*body*/
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #fcd1d7;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+body .page {
+    margin: 20px 80px;
+}
+
+/*nav*/
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #fcd1d7;
+    padding: 10px 0px;
+}
+
+nav .onglet {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+nav .onglet a {
+    margin-right: 20px;
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+}
+
+nav .bouton button {
+    font-family: 'Playfair Display', serif;
+    padding: 10px 20px;
+    color: black;
+    border: none;
+    background-color: #e9b1cd;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+nav .bouton .connexion {
+    margin-right: 10px;
+}
+
+nav .bouton .inscription {
+    margin-right: 10px;
+}
+
+/*explication*/
+.explica {
+    margin: 50px;
+    background-color: pink;
+    text-align: center;
+    padding: 15px;
+}
+
+.cara {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/*header*/
+header {
+    margin-top: 40px;
+    background-image: url(../img/fulllong.png);
+    background-repeat: no-repeat;
+    background-size: 1000px 600px;
+    background-position: center;
+}
+
+header h1 {
+    text-align: right;
+    font-size: 30px;
+    padding: 300px;
+}
+
+/*main*/
+.eachCarte {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    margin: 100px;
+}
+
+.carte {
+    height: auto;
+    width: 120px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.texte {
+    text-align: center;
+    cursor:pointer;
+}
+
+.box {
+    height: 342px;
+    width: 160px;
+}
+
+/*autre page*/
+.navpag {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+/*footer*/
+footer {
+    background-color:#e9b1cd;
+    padding: 25px 100px;
+    color: black;
+    background-image: url(../img/footer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 250px 200px;
+}
+
+footer .colonnes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*Début pour le responsive*/
+@media all and (max-device-width: 480px) {
+    header {
+        background-image: none;
+        margin-top: none;
+    }
+
+    header h1{
+        padding: 0;
+        margin: 1%;
+    }
+   
+    footer {
+        background-image: none;
+    }
+
+    .colonnes { 
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main {
+        background-image: url(img/cercle.png);
+        background-repeat: no-repeat;
+        background-size: 340px;
+        background-position: center;
+    }
+
+    nav .onglet {
+        display: flex;
+        justify-content: left;
+    }
+
+    nav .bouton {
+        display: flex;
+        justify-content: right;
+    }
+}
+/*Fin pour le responsive*/

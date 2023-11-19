@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+/*Début body*/
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #fcd1d7;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+body .page {
+    margin: 20px 80px;
+}
+/*Fin body*/
+
+/*Début nav*/
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #fcd1d7;
+    padding: 10px 0px;
+}
+
+nav .onglet {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+nav .onglet a {
+    margin-right: 20px;
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+}
+
+nav .bouton button {
+    font-family: 'Playfair Display', serif;
+    padding: 10px 20px;
+    color: black;
+    border: none;
+    background-color: #e9b1cd;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+nav .bouton .connexion {
+    margin-right: 10px;
+}
+
+nav .bouton .inscription {
+    margin-right: 10px;
+}
+/*Fin nav*/
+
+/*Début explication*/
+.explica {
+    margin: 50px;
+    background-color: pink;
+    text-align: center;
+    padding: 15px;
+}
+/*Fin explication*/
+
+/*Début header*/
+header {
+    background-image: url(../img/withwandmagic.png);
+    background-repeat: no-repeat;
+    background-size: 500px 400px;
+    background-position: right;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 20px;
+    padding: 200px;
+}
+/*Fin header*/
+
+/*Début tableau*/
+table {
+    background: pink;
+    width: 90%;
+    margin: auto;
+    padding: 0.5rem;
+    border : 3px solid #e9b1cd;
+}
+
+th,
+td {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+th {
+    background: #e9b1cd;
+}
+
+td {
+    border : 2px solid #e9b1cd;
+}
+/*Fin tableau*/
+
+/*Début autre page*/
+.navpag {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
+}
+/*Fin autre page*/
+
+/*Début footer */
+footer {
+    background-color:#e9b1cd;
+    padding: 25px 100px;
+    color: black;
+    background-image: url(../img/footer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 250px 200px;
+}
+
+footer .colonnes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*Fin footer */
+
+/*Début pour le responsive*/
+@media all and (max-device-width: 480px) {
+    header {
+        background-image: none;
+        margin-top: none;
+    }
+
+    header h1{
+        padding: 0;
+        margin: 1%;
+    }
+   
+    footer {
+        background-image: none;
+    }
+
+    .colonnes {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main {
+        background-image: url(img/cercle.png);
+        background-repeat: no-repeat;
+        background-size: 340px;
+        background-position: center;
+    }
+
+    nav .onglet {
+        display: flex;
+        justify-content: left;
+    }
+
+    nav .bouton {
+        display: flex;
+        justify-content: right;
+    }
+
+    td {
+        border : 2px solid rgb(173, 255, 173);
+    }
+
+    th {
+        background: rgb(173, 255, 173);
+    }
+
+    table {
+        background: rgb(224, 151, 255);
+        width: 90%;
+        margin: auto;
+        padding: 0.5rem;
+        border : 3px solid rgb(173, 255, 173);
+    }
+}
+/*Fin pour le responsive*/
